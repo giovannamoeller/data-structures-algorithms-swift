@@ -13,7 +13,7 @@ mesurePerformance(2, func2)
 mesurePerformance(3, func3)
 
 func mesurePerformance(_ functionNumber: Int, _ function: ([Int]) -> Int) {
-  let array = generateArray(1000)
+  let array = generateArray(500)
   let startTime = CFAbsoluteTimeGetCurrent()
   function(array)
   let endTime = CFAbsoluteTimeGetCurrent()
@@ -41,4 +41,3 @@ func func3(array: [Int]) -> Int {
   }
   return pairs.count
 }
-\
